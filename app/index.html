@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <button class="header__button">
+            <svg class="header__button-icon icon">
+              <use xlink:href="./images/icons/sprite.svg#burger-menu"></use>
+            </svg>
+            <span class="header__button-label">Каталог</span>
+          </button>
+          <form class="header__searh">
+            <label class="header__searh-label">
+              <input
+                class="header__searh-input"
+                type="text"
+                placeholder="Найти товар"
+              />
+              <svg class="header__searh-icon icon">
+                <use xlink:href="./images/icons/sprite.svg#search"></use>
+              </svg>
+            </label>
+          </form>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">
+                  <svg class="menu__list-icon icon">
+                    <use xlink:href="./images/icons/sprite.svg#favorites"></use>
+                  </svg>
+                  Избранное
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">
+                  <svg class="menu__list-icon icon">
+                    <use xlink:href="./images/icons/sprite.svg#orders"></use>
+                  </svg>
+                  Заказы
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link basket" href="#">
+                  <svg class="menu__list-icon icon">
+                    <use xlink:href="./images/icons/sprite.svg#basket"></use>
+                  </svg>
+                  Корзина
+                  <span class="basket__count">1</span>
+                </a>
+              </li>
+            </ul>
+            <div class="header__menu-user user-nav">
+              <a class="user-nav__user" href="#">
+                <img
+                  class="user-nav__avatar"
+                  src="./images/avatar.png"
+                  alt="avatar"
+                />
+                <span class="user-nav__username"> Алексей </span>
+              </a>
+              <button class="user-nav__button">
+                <svg class="user-nav__button-icon icon">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#chevron-down"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main"></main>
+    <footer class="footer"></footer>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
