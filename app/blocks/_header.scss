@@ -2,7 +2,7 @@
   height: var(--header-height);
 
   background-color: var(--light-color);
-  box-shadow: var(--default-shadow);
+  box-shadow: var(--header-shadow);
 
   &__inner {
     display: flex;
