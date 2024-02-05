@@ -1,0 +1,56 @@
+.footer {
+  padding: 24px 0 44px;
+
+  background-image: url('../images/footer-bg.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: #f9f4e2;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+  }
+  &__menu {
+    margin-right: auto;
+  }
+  &__menu-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  &__manu-link {
+    color: var(--primary-color);
+
+    font: var(--font-s);
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__phone-tel {
+    color: var(--primary-color);
+  }
+  &__copy {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+
+    font: var(--font-s);
+  }
+}
