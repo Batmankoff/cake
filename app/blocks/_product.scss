@@ -42,7 +42,7 @@
     border-radius: 4px;
 
     color: var(--light-color);
-    background-color: var(--orange-color);
+    background-color: var(--orange-color-1);
 
     text-align: center;
   }
@@ -98,10 +98,10 @@
     cursor: pointer;
 
     &:hover {
-      border-color: var(--orange-color);
+      border-color: var(--orange-color-1);
 
       color: var(--light-color);
-      background-color: var(--orange-color);
+      background-color: var(--orange-color-1);
     }
   }
   &:has(.product__button:hover) {
