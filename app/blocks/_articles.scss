@@ -1,0 +1,21 @@
+.articles {
+  padding: 60px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+  }
+  &__link {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: var(--gray-color-4);
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,12 +1,11 @@
 $(function () {
   $('.star').rateYo({
-    /* ширина звезды */
     starWidth: '17px',
-    /* цвет не закрашенной звезды */
+
     normalFill: '#BFBFBF',
-    /* цвет закрашенной звезды */
+
     ratedFill: '#FF6633',
-    /* нельзя изменить рейтинг */
+
     readOnly: true,
     spacing: '4px',
     starSvg:
@@ -14,12 +13,9 @@ $(function () {
   });
 
   $('.stores__tabs-top__item').on('click', function (e) {
-    e.preventDefault(); /* отмена стандартной работы ссылки */
-    $('.stores__tabs-top__item').removeClass(
-      'stores__tabs-top__item--active'
-    ); /* при клики у все будет убираться class active  */
+    e.preventDefault();
+    $('.stores__tabs-top__item').removeClass('stores__tabs-top__item--active');
     $(this).addClass('stores__tabs-top__item--active');
-    /* при клики появляется class active, на кого кликнули  */
 
     $('.stores__tabs-content__item').removeClass(
       'stores__tabs-content__item--active'
