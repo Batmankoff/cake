@@ -1,11 +1,24 @@
 .products {
   padding: 60px 0;
+  @include max-w(992) {
+    padding: 50px 0;
+  }
+  @include max-w(767) {
+    padding: 20px 0;
+  }
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 40px;
+    @include max-w(992) {
+      margin-bottom: 32px;
+    }
+    @include max-w(767) {
+      align-items: center;
+      margin-bottom: 20px;
+    }
   }
   &__link {
     padding: 8px;
@@ -20,5 +33,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
+    @include max-w(992) {
+      align-items: stretch;
+    }
+    @include max-w(767) {
+      justify-content: center;
+    }
+  }
+  &__product {
+    @include max-w(1200) {
+      &:last-child {
+        display: none;
+      }
+    }
+    @include max-w(767) {
+      &:not(:first-child) {
+        display: none;
+      }
+    }
   }
 }

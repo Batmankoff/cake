@@ -4,6 +4,9 @@
 
   --font-line: 1.5;
 
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
   --font-size-s: 12px;
   --font-s: var(--font-size-s) / var(--font-line) var(--font-family-main);
 
@@ -15,11 +18,12 @@
   --font-l: var(--font-size-l) / var(--font-line) var(--font-family-main);
 
   --font-size-title: 36px;
-  --font-title: var(--font-size-title) / var(--font-line)
-    var(--font-family-main);
+  --font-title: var(--font-weight-bold) var(--font-size-title) /
+    var(--font-line) var(--font-family-main);
 
-  --font-weight-regular: 400;
-  --font-weight-bold: 700;
+  --font-size-title-s: 24px;
+  --font-title-s: var(--font-size-title-s) / var(--font-line)
+    var(--font-family-main);
 
   /*colors*/
   --default-bg: #fbf8ec;

@@ -6,9 +6,12 @@
   background-color: var(--light-color);
   box-shadow: var(--product-shadow);
   transition: all 0.3s;
+  @include max-w(992) {
+    max-width: 224px;
+  }
   &__wrapper {
     position: relative;
-    max-height: 160px;
+    min-height: 160px;
   }
   &__img {
     height: 100%;
@@ -48,6 +51,7 @@
   }
 
   &__content {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -88,6 +92,7 @@
     justify-content: center;
 
     padding: 8px;
+
     border: 1px solid var(--secondary-color);
     border-radius: 4px;
 
@@ -102,6 +107,9 @@
 
       color: var(--light-color);
       background-color: var(--orange-color-1);
+    }
+    @include max-w(992) {
+      margin-top: auto;
     }
   }
   &:has(.product__button:hover) {

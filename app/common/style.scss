@@ -1,4 +1,5 @@
-@import 'variables.scss';
+@import 'variables';
+@import 'mixins/media';
 @import 'fonts';
 @import 'libs';
 @import 'reset';
@@ -34,7 +35,12 @@ body {
 }
 .title {
   font: var(--font-title);
-  font-weight: var(--font-weight-bold);
+  @include max-w(992) {
+    font-size: var(--font-size-title-s);
+  }
+  @include max-w(767) {
+    font-size: var(--font-size-l);
+  }
 }
 @import '../blocks/index.scss';
 

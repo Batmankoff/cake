@@ -1,10 +1,23 @@
 .articles {
   padding: 60px 0;
+  @include max-w(992) {
+    padding: 50px 0;
+  }
+  @include max-w(767) {
+    padding: 20px 0;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 40px;
+    @include max-w(992) {
+      margin-bottom: 32px;
+    }
+    @include max-w(767) {
+      margin-bottom: 20px;
+      align-items: center;
+    }
   }
   &__link {
     padding: 8px;
@@ -17,5 +30,18 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    @include max-w(1200) {
+      gap: 30px;
+    }
+  }
+  &__article {
+    @include max-w(992) {
+      flex: 1;
+    }
+    @include max-w(767) {
+      &:not(:first-child) {
+        display: none;
+      }
+    }
   }
 }

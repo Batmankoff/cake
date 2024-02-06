@@ -485,11 +485,17 @@
                   И получайте бонусы при покупке в магазинах и на сайте
                 </p>
               </div>
-              <img
-                class="special-offers__banner-img"
-                src="images/special-offers-img-1.png"
-                alt="special offers image"
-              />
+              <picture class="special-offers__banner-picture">
+                <source
+                  srcset="./images/special-offers-img-1-mobile.png"
+                  media="(max-width: 768px)"
+                />
+                <img
+                  class="special-offers__banner-img"
+                  src="images/special-offers-img-1.png"
+                  alt="special offers image"
+                />
+              </picture>
             </a>
             <a class="special-offers__banner" href="#">
               <div
@@ -503,11 +509,17 @@
                   И получайте вдвое больше бонусов
                 </p>
               </div>
-              <img
-                class="special-offers__banner-img"
-                src="images/special-offers-img-2.png"
-                alt="special offers image"
-              />
+              <picture class="special-offers__banner-picture">
+                <source
+                  srcset="./images/special-offers-img-2-mobile.png"
+                  media="(max-width: 768px)"
+                />
+                <img
+                  class="special-offers__banner-img"
+                  src="images/special-offers-img-2.png"
+                  alt="special offers image"
+                />
+              </picture>
             </a>
           </div>
         </div>
@@ -534,11 +546,17 @@
                 class="stores__tabs-content__item stores__tabs-content__item--active"
                 id="tab-1"
               >
-                <img
-                  class="stores__tabs-content__map"
-                  src="./images/stores-map-img.jpeg"
-                  alt="map"
-                />
+                <picture class="stores__tabs-content-picture">
+                  <source
+                    srcset="./images/stores-map-img-mobile.jpeg"
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    class="stores__tabs-content__map"
+                    src="./images/stores-map-img.jpeg"
+                    alt="map"
+                  />
+                </picture>
               </div>
               <div class="stores__tabs-content__item" id="tab-2">content 2</div>
               <div class="stores__tabs-content__item" id="tab-3">content 3</div>
@@ -560,7 +578,7 @@
             </a>
           </div>
           <div class="articles__list">
-            <div class="article">
+            <div class="articles__article article">
               <img
                 class="article__img"
                 src="./images/content/articles/article-1.jpeg"
@@ -580,7 +598,7 @@
               </div>
             </div>
 
-            <div class="article">
+            <div class="articles__article article">
               <img
                 class="article__img"
                 src="./images/content/articles/article-2.jpeg"
@@ -597,7 +615,7 @@
                 <a class="article__link" href="#">Подробнее</a>
               </div>
             </div>
-            <div class="article">
+            <div class="articles__article article">
               <img
                 class="article__img"
                 src="./images/content/articles/article-3.jpeg"
@@ -636,6 +654,8 @@
                 <li class="footer__menu-item">
                   <a class="footer__manu-link" href="#">Вакансии</a>
                 </li>
+              </ul>
+              <ul class="footer__menu-list">
                 <li class="footer__menu-item">
                   <a class="footer__manu-link" href="#">Статьи</a>
                 </li>
@@ -684,15 +704,26 @@
                 </a>
               </li>
             </ul>
-            <div class="footer__phone">
-              <svg class="footer__phone-icon icon">
-                <use xlink:href="./images/icons/sprite.svg#phone"></use>
-              </svg>
-              <a class="footer__phone-tel" href="tel:88007773333">
-                8 800 777 33 33
-              </a>
+            <div class="footer__wrapper">
+              <div class="footer__phone">
+                <svg class="footer__phone-icon icon">
+                  <use xlink:href="./images/icons/sprite.svg#phone"></use>
+                </svg>
+                <a class="footer__phone-tel" href="tel:88007773333">
+                  8 800 777 33 33
+                </a>
+              </div>
+              <div class="footer__copy-mobile">
+                Дизайн
+                <img
+                  class="footer__logo"
+                  src="./images/logo-zasovskiy.svg"
+                  alt="logo zasovskiy"
+                />
+              </div>
             </div>
           </div>
+
           <div class="footer__bottom">
             <div class="footer__copy">
               Дизайн

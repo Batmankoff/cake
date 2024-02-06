@@ -1,13 +1,29 @@
 .stores {
   padding: 60px 0;
+  @include max-w(992) {
+    padding: 50px 0;
+  }
+  @include max-w(767) {
+    padding: 20px 0;
+  }
   &__title {
     margin-bottom: 40px;
+    @include max-w(992) {
+      margin-bottom: 32px;
+    }
+    @include max-w(767) {
+      margin-bottom: 20px;
+    }
   }
   &__tabs-top {
     display: flex;
     align-items: center;
     gap: 24px;
     margin-bottom: 24px;
+    @include max-w(767) {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
   }
 
   &__tabs-top__item {
@@ -29,9 +45,6 @@
 
   &__tabs-content__item {
     display: none;
-    min-height: 354px;
-
-    background-color: var(--orange-color-1);
 
     &.stores__tabs-content__item--active {
       display: block;
