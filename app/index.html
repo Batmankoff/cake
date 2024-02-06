@@ -91,7 +91,39 @@
           </div>
         </div>
       </section>
+
+      <div class="product">
+        <div class="product__wrapper">
+          <img
+            class="product__img"
+            src="./images/content/product/pancakes.jpg"
+            alt="product img"
+          />
+          <button class="product__add-favorite">
+            <svg class="icon">
+              <use xlink:href="./images/icons/sprite.svg#heart"></use>
+            </svg>
+          </button>
+          <span class="product__sale">-50%</span>
+        </div>
+        <div class="product__content">
+          <div class="product__price">
+            <div class="product__price-new">
+              44,50 ₽
+              <span class="product__price-text">С картой</span>
+            </div>
+            <div class="product__price-old">
+              50,50 ₽
+              <span class="product__price-text">Обычная</span>
+            </div>
+          </div>
+          <p class="product__name">Г/Ц Блинчики с мясом вес, Россия</p>
+          <div class="product__rating star" data-rateyo-rating="2"></div>
+          <button class="product__button">В корзину</button>
+        </div>
+      </div>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
@@ -177,7 +209,6 @@
         </div>
       </div>
     </footer>
-
-    <script src="js/main.min.js"></script>
+    <script type="module" src="js/main.min.js"></script>
   </body>
 </html>
