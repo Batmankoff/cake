@@ -79,6 +79,9 @@
   &__rating {
     padding: 0;
   }
+  &__name {
+    color: var(--primary-color);
+  }
   &__button {
     display: flex;
     align-items: center;

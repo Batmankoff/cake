@@ -92,36 +92,383 @@
         </div>
       </section>
 
-      <div class="product">
-        <div class="product__wrapper">
-          <img
-            class="product__img"
-            src="./images/content/product/pancakes.jpg"
-            alt="product img"
-          />
-          <button class="product__add-favorite">
-            <svg class="icon">
-              <use xlink:href="./images/icons/sprite.svg#heart"></use>
-            </svg>
-          </button>
-          <span class="product__sale">-50%</span>
-        </div>
-        <div class="product__content">
-          <div class="product__price">
-            <div class="product__price-new">
-              44,50 ₽
-              <span class="product__price-text">С картой</span>
+      <section class="products">
+        <div class="container">
+          <div class="products__wrapper">
+            <h2 class="products__title title">Акции</h2>
+            <a class="products__link" href="#">
+              Все акции
+              <svg class="products__link-icon icon">
+                <use xlink:href="./images/icons/sprite.svg#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="products__list">
+            <div class="products__product product">
+              <div class="product__wrapper">
+                <img
+                  class="product__img"
+                  src="./images/content/product/pancakes.jpg"
+                  alt="product img"
+                />
+                <button class="product__add-favorite">
+                  <svg class="icon">
+                    <use xlink:href="./images/icons/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+                <span class="product__sale">-50%</span>
+              </div>
+              <div class="product__content">
+                <div class="product__price">
+                  <div class="product__price-new">
+                    44,50 ₽
+                    <span class="product__price-text">С картой</span>
+                  </div>
+                  <div class="product__price-old">
+                    50,50 ₽
+                    <span class="product__price-text">Обычная</span>
+                  </div>
+                </div>
+                <p class="product__name">Г/Ц Блинчики с мясом вес, Россия</p>
+                <div class="product__rating star" data-rateyo-rating="2"></div>
+                <button class="product__button">В корзину</button>
+              </div>
             </div>
-            <div class="product__price-old">
-              50,50 ₽
-              <span class="product__price-text">Обычная</span>
+
+            <div class="products__product product">
+              <div class="product__wrapper">
+                <img
+                  class="product__img"
+                  src="./images/content/product/milk.jpeg"
+                  alt="product img"
+                />
+                <button class="product__add-favorite">
+                  <svg class="icon">
+                    <use xlink:href="./images/icons/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+                <span class="product__sale">-50%</span>
+              </div>
+              <div class="product__content">
+                <div class="product__price">
+                  <div class="product__price-new">
+                    44,50 ₽
+                    <span class="product__price-text">С картой</span>
+                  </div>
+                  <div class="product__price-old">
+                    50,50 ₽
+                    <span class="product__price-text">Обычная</span>
+                  </div>
+                </div>
+                <p class="product__name">
+                  Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...
+                </p>
+                <div class="product__rating star" data-rateyo-rating="3"></div>
+                <button class="product__button">В корзину</button>
+              </div>
+            </div>
+
+            <div class="products__product product">
+              <div class="product__wrapper">
+                <img
+                  class="product__img"
+                  src="./images/content/product/sausage-1.jpeg"
+                  alt="product img"
+                />
+                <button class="product__add-favorite">
+                  <svg class="icon">
+                    <use xlink:href="./images/icons/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+                <span class="product__sale">-50%</span>
+              </div>
+              <div class="product__content">
+                <div class="product__price">
+                  <div class="product__price-new">
+                    44,50 ₽
+                    <span class="product__price-text">С картой</span>
+                  </div>
+                  <div class="product__price-old">
+                    50,50 ₽
+                    <span class="product__price-text">Обычная</span>
+                  </div>
+                </div>
+                <p class="product__name">
+                  Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...
+                </p>
+                <div class="product__rating star" data-rateyo-rating="5"></div>
+                <button class="product__button">В корзину</button>
+              </div>
+            </div>
+
+            <div class="products__product product">
+              <div class="product__wrapper">
+                <img
+                  class="product__img"
+                  src="./images/content/product/sausage-2.jpeg"
+                  alt="product img"
+                />
+                <button class="product__add-favorite">
+                  <svg class="icon">
+                    <use xlink:href="./images/icons/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+                <span class="product__sale">-50%</span>
+              </div>
+              <div class="product__content">
+                <div class="product__price">
+                  <div class="product__price-new">
+                    44,50 ₽
+                    <span class="product__price-text">С картой</span>
+                  </div>
+                  <div class="product__price-old">
+                    50,50 ₽
+                    <span class="product__price-text">Обычная</span>
+                  </div>
+                </div>
+                <p class="product__name">
+                  Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...
+                </p>
+                <div
+                  class="product__rating star"
+                  data-rateyo-rating="4.5"
+                ></div>
+                <button class="product__button">В корзину</button>
+              </div>
             </div>
           </div>
-          <p class="product__name">Г/Ц Блинчики с мясом вес, Россия</p>
-          <div class="product__rating star" data-rateyo-rating="2"></div>
-          <button class="product__button">В корзину</button>
         </div>
-      </div>
+      </section>
+
+      <section class="products">
+        <div class="container">
+          <div class="products__wrapper">
+            <h2 class="products__title title">Новинки</h2>
+            <a class="products__link" href="#">
+              Все новинки
+              <svg class="products__link-icon icon">
+                <use xlink:href="./images/icons/sprite.svg#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="products__list">
+            <div class="products__product product">
+              <div class="product__wrapper">
+                <img
+                  class="product__img"
+                  src="./images/content/product/sausage-3.jpeg"
+                  alt="product img"
+                />
+                <button class="product__add-favorite">
+                  <svg class="icon">
+                    <use xlink:href="./images/icons/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__content">
+                <div class="product__price">
+                  <div class="product__price-new">599,99 ₽</div>
+                </div>
+                <p class="product__name">
+                  Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                </p>
+                <div class="product__rating star" data-rateyo-rating="2"></div>
+                <button class="product__button">В корзину</button>
+              </div>
+            </div>
+
+            <div class="products__product product">
+              <div class="product__wrapper">
+                <img
+                  class="product__img"
+                  src="./images/content/product/sausage-1.jpeg"
+                  alt="product img"
+                />
+                <button class="product__add-favorite">
+                  <svg class="icon">
+                    <use xlink:href="./images/icons/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__content">
+                <div class="product__price">
+                  <div class="product__price-new">44,50 ₽</div>
+                </div>
+                <p class="product__name">
+                  Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...
+                </p>
+                <div class="product__rating star" data-rateyo-rating="5"></div>
+                <button class="product__button">В корзину</button>
+              </div>
+            </div>
+
+            <div class="products__product product">
+              <div class="product__wrapper">
+                <img
+                  class="product__img"
+                  src="./images/content/product/sausage-2.jpeg"
+                  alt="product img"
+                />
+                <button class="product__add-favorite">
+                  <svg class="icon">
+                    <use xlink:href="./images/icons/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__content">
+                <div class="product__price">
+                  <div class="product__price-new">159,99 ₽</div>
+                </div>
+                <p class="product__name">
+                  Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                </p>
+                <div class="product__rating star" data-rateyo-rating="2"></div>
+                <button class="product__button">В корзину</button>
+              </div>
+            </div>
+
+            <div class="products__product product">
+              <div class="product__wrapper">
+                <img
+                  class="product__img"
+                  src="./images/content/product/milk.jpeg"
+                  alt="product img"
+                />
+                <button class="product__add-favorite">
+                  <svg class="icon">
+                    <use xlink:href="./images/icons/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__content">
+                <div class="product__price">
+                  <div class="product__price-new">44,50 ₽</div>
+                </div>
+                <p class="product__name">
+                  Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12».
+                </p>
+                <div class="product__rating star" data-rateyo-rating="2"></div>
+                <button class="product__button">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="container">
+          <div class="products__wrapper">
+            <h2 class="products__title title">Покупали раньше</h2>
+            <a class="products__link" href="#">
+              Все покупки
+              <svg class="products__link-icon icon">
+                <use xlink:href="./images/icons/sprite.svg#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="products__list">
+            <div class="products__product product">
+              <div class="product__wrapper">
+                <img
+                  class="product__img"
+                  src="./images/content/product/sausage-1.jpeg"
+                  alt="product img"
+                />
+                <button class="product__add-favorite">
+                  <svg class="icon">
+                    <use xlink:href="./images/icons/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__content">
+                <div class="product__price">
+                  <div class="product__price-new">79,99 ₽</div>
+                </div>
+                <p class="product__name">
+                  Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                </p>
+                <div class="product__rating star" data-rateyo-rating="2"></div>
+                <button class="product__button">В корзину</button>
+              </div>
+            </div>
+
+            <div class="products__product product">
+              <div class="product__wrapper">
+                <img
+                  class="product__img"
+                  src="./images/content/product/sausage-2.jpeg"
+                  alt="product img"
+                />
+                <button class="product__add-favorite">
+                  <svg class="icon">
+                    <use xlink:href="./images/icons/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__content">
+                <div class="product__price">
+                  <div class="product__price-new">159,99 ₽</div>
+                </div>
+                <p class="product__name">
+                  Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                </p>
+                <div class="product__rating star" data-rateyo-rating="2"></div>
+                <button class="product__button">В корзину</button>
+              </div>
+            </div>
+
+            <div class="products__product product">
+              <div class="product__wrapper">
+                <img
+                  class="product__img"
+                  src="./images/content/product/sausage-3.jpeg"
+                  alt="product img"
+                />
+                <button class="product__add-favorite">
+                  <svg class="icon">
+                    <use xlink:href="./images/icons/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__content">
+                <div class="product__price">
+                  <div class="product__price-new">599,99 ₽</div>
+                </div>
+                <p class="product__name">
+                  Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                </p>
+                <div class="product__rating star" data-rateyo-rating="2"></div>
+                <button class="product__button">В корзину</button>
+              </div>
+            </div>
+
+            <div class="products__product product">
+              <div class="product__wrapper">
+                <img
+                  class="product__img"
+                  src="./images/content/product/milk.jpeg"
+                  alt="product img"
+                />
+                <button class="product__add-favorite">
+                  <svg class="icon">
+                    <use xlink:href="./images/icons/sprite.svg#heart"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__content">
+                <div class="product__price">
+                  <div class="product__price-new">49,39 ₽</div>
+                </div>
+                <p class="product__name">
+                  Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»
+                </p>
+                <div class="product__rating star" data-rateyo-rating="2"></div>
+                <button class="product__button">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">

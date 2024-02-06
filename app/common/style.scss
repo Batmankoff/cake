@@ -33,6 +33,10 @@ body {
   width: 24px;
   height: 24px;
 }
+.title {
+  font: var(--font-title);
+  font-weight: var(--font-weight-bold);
+}
 @import '../blocks/index.scss';
 
 @import 'media';
