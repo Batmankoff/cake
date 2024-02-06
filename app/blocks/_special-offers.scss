@@ -1,0 +1,120 @@
+.special-offers {
+  padding: 60px 0;
+  @include max-w(992) {
+    padding: 50px 0;
+  }
+  @include max-w(767) {
+    padding: 20px 0;
+  }
+  &__title {
+    margin-bottom: 40px;
+    @include max-w(992) {
+      margin-bottom: 32px;
+    }
+    @include max-w(767) {
+      margin-bottom: 20px;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    @include max-w(992) {
+      gap: 32px;
+    }
+    @include max-w(767) {
+      flex-direction: column;
+    }
+  }
+  &__banner {
+    flex: 1 1;
+    display: flex;
+    min-height: 200px;
+    border-radius: 4px;
+    overflow: hidden;
+    &:nth-child(1) {
+      box-shadow: var(--banner-shadow);
+      background-color: var(--orange-color-2);
+      @include max-w(992) {
+        .special-offers__banner-img {
+          max-width: max-content;
+          width: 150px;
+        }
+      }
+    }
+    &:nth-child(2) {
+      background-color: var(--orange-green-1);
+
+      background-image: url(../images//special-offers-bg.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      @include max-w(1200) {
+        background-size: contain;
+      }
+      @include max-w(992) {
+        background-image: url(../images/special-offers-bg-mobile.svg);
+        background-size: cover;
+
+        .special-offers__banner-picture {
+          margin-left: 40px;
+        }
+        .special-offers__banner-img {
+          width: 132px;
+        }
+      }
+    }
+    @include max-w(992) {
+      align-items: center;
+      min-height: 170px;
+    }
+  }
+  &__banner-content {
+    max-width: 300px;
+    padding: 30px 0 0 40px;
+    &--card {
+      margin-right: 21px;
+    }
+    &--shares {
+      margin-right: 51px;
+      @include max-w(992) {
+        max-width: 145px;
+      }
+    }
+    @include max-w(1200) {
+      margin-right: 15px;
+    }
+    @include max-w(992) {
+      margin: 0;
+      padding: 20px;
+    }
+  }
+  &__banner-title {
+    font: var(--font-title-s);
+    margin-bottom: 6px;
+    span {
+      display: block;
+    }
+    @include max-w(1200) {
+      font: var(--font-l);
+    }
+  }
+  &__banner-description {
+    @include max-w(1200) {
+      font: var(--font-s);
+    }
+  }
+  &__banner-picture {
+    @include max-w(992) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__banner-img {
+    max-height: 180px;
+    padding-top: 14px;
+    @include max-w(992) {
+      padding-top: 0;
+    }
+  }
+}

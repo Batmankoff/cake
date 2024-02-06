@@ -1,0 +1,44 @@
+.top {
+  margin-bottom: 20px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include max-w(992) {
+    margin-bottom: 10px;
+  }
+  &__inner {
+    min-height: 200px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    @include max-w(992) {
+      min-height: 160px;
+    }
+  }
+  &__img {
+    @include max-w(992) {
+      max-height: 132px;
+      align-self: self-end;
+    }
+    @include max-w(767) {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: var(--font-weight-bold);
+    line-height: 150%;
+    text-align: center;
+    @include max-w(1200) {
+      font-size: var(--font-size-title);
+    }
+    @include max-w(992) {
+      font-size: var(--font-size-title-s);
+    }
+  }
+}

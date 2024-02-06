@@ -1,0 +1,118 @@
+.product {
+  max-width: 272px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--light-color);
+  box-shadow: var(--product-shadow);
+  transition: all 0.3s;
+  @include max-w(992) {
+    max-width: 224px;
+  }
+  &__wrapper {
+    position: relative;
+    min-height: 160px;
+  }
+  &__img {
+    height: 100%;
+    object-fit: cover;
+  }
+  &__add-favorite {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    border: none;
+    border-radius: 4px;
+
+    background-color: var(--gray-color-2);
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  &__sale {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+
+    width: 56px;
+    padding: 4px 8px 4px 8px;
+    border-radius: 4px;
+
+    color: var(--light-color);
+    background-color: var(--orange-color-1);
+
+    text-align: center;
+  }
+
+  &__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__price-new,
+  &__price-old {
+    display: flex;
+    flex-direction: column;
+  }
+  &__price-new {
+    font: var(--font-l);
+    font-weight: var(--font-weight-bold);
+  }
+  &__price-old {
+    color: var(--gray-color-4);
+  }
+  &__price-text {
+    color: var(--gray-color-3);
+
+    font: var(--font-s);
+    font-weight: var(--font-weight-regular);
+  }
+  &__rating {
+    padding: 0;
+  }
+  &__name {
+    color: var(--primary-color);
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px;
+
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+
+    color: var(--secondary-color);
+    background-color: var(--light-color);
+
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      border-color: var(--orange-color-1);
+
+      color: var(--light-color);
+      background-color: var(--orange-color-1);
+    }
+    @include max-w(992) {
+      margin-top: auto;
+    }
+  }
+  &:has(.product__button:hover) {
+    box-shadow: var(--product-hover-shadow);
+  }
+}

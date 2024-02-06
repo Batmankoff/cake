@@ -2,12 +2,15 @@
   height: var(--header-height);
 
   background-color: var(--light-color);
-  box-shadow: var(--default-shadow);
+  box-shadow: var(--header-shadow);
 
   &__inner {
     display: flex;
     align-items: center;
     padding: 8px 0;
+    @include max-w(767) {
+      justify-content: space-between;
+    }
   }
   &__button {
     display: flex;
@@ -23,15 +26,30 @@
     background-color: var(--secondary-color);
 
     cursor: pointer;
+
+    @include max-w(992) {
+      margin-right: 20px;
+    }
   }
   &__button-icon,
   &__button-label {
     margin: 0px 8px;
+    @include max-w(992) {
+      margin: 0;
+    }
+  }
+  &__button-label {
+    @include max-w(992) {
+      display: none;
+    }
   }
 
   &__searh {
     flex-grow: 1;
     margin-right: 40px;
+    @include max-w(767) {
+      display: none;
+    }
   }
   &__searh-label {
     position: relative;
@@ -45,7 +63,7 @@
     border: 1px solid var(--secondary-color);
     border-radius: 4px;
 
-    color: var(--gray-hard-color);
+    color: var(--gray-color-1);
     background-color: var(--light-color);
     &:focus {
       outline: none;
@@ -63,10 +81,14 @@
   display: flex;
   align-items: center;
   gap: 24px;
+
   &__list {
     display: flex;
     align-items: center;
     gap: 24px;
+    @include max-w(767) {
+      display: none;
+    }
   }
   &__list-link {
     display: flex;
@@ -97,7 +119,7 @@
     border-radius: 4px;
 
     color: var(--light-color);
-    background-color: rgb(255, 102, 51);
+    background-color: var(--orange-color-1);
 
     font-size: 7px;
   }
@@ -121,6 +143,9 @@
   }
   &__username {
     color: var(--dark-color);
+    @include max-w(992) {
+      display: none;
+    }
   }
   &__button {
     width: 40px;
@@ -130,5 +155,8 @@
 
     background-color: var(--light-color);
     cursor: pointer;
+    @include max-w(992) {
+      display: none;
+    }
   }
 }
