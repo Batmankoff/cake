@@ -1,4 +1,4 @@
-<p>Github pages:<a href="https://batmankoff.github.io/finsweet/dist/index.html"  target="_blank">link</a> </p>
+<p>Github pages:<a href="https://batmankoff.github.io/cake/dist/index.html"  target="_blank">link</a> </p>
 <br>
 <ul>
   <li>HTML</li>
@@ -7,5 +7,3 @@
   <li>jQuery </li>
   <li>rateyo</li>
 </ul>
-
-
