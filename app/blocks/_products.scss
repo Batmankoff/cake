@@ -38,6 +38,9 @@
       align-items: stretch;
     }
     @include max-w(767) {
+      justify-content: space-around;
+    }
+    @include max-w(577) {
       justify-content: center;
     }
   }
@@ -48,6 +51,11 @@
       }
     }
     @include max-w(767) {
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+    @include max-w(577) {
       &:not(:first-child) {
         display: none;
       }

@@ -33,12 +33,20 @@
     @include max-w(1200) {
       gap: 30px;
     }
+    @include max-w(577) {
+      justify-content: center;
+    }
   }
   &__article {
     @include max-w(992) {
       flex: 1;
     }
     @include max-w(767) {
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+    @include max-w(577) {
       &:not(:first-child) {
         display: none;
       }
