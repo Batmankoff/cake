@@ -86,7 +86,7 @@
     display: flex;
     align-items: center;
     gap: 24px;
-    @include max-w(767) {
+    @include max-w(577) {
       display: none;
     }
   }
